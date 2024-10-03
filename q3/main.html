@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Car Photo Album</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+
+        .album-list {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .album {
+            border: 2px solid #eaeaea;
+            padding: 10px;
+            width: 200px;
+        }
+
+        .album img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .album img:hover {
+            transform: scale(1.05);
+        }
+
+        .album p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .album a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Luxury Car Photo Album</h1>
+    <p>Explore two exciting categories of luxury cars.</p>
+
+    <!-- Album List -->
+    <div class="album-list">
+        <div class="album">
+            <a href="photoalbum1.html">
+                <img src="thumbnail-photoalbum1.jpg" alt="Supercars">
+                <p>Supercars</p>
+            </a>
+        </div>
+        <div class="album">
+            <a href="photoalbum2.html">
+                <img src="thumbnail-photoalbum2.jpg" alt="SUVs">
+                <p>SUVs</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

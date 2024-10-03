@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supercars Album</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 40px auto;
+            width: 90%;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        .photo-grid a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Supercars Album</h1>
+    <p>Experience the beauty and power of the world's top supercars.</p>
+
+    <div class="photo-grid">
+        <a href="supercar1.jpg" target="_blank"><img src="supercar1-thumb.jpg" alt="Supercar 1"></a>
+        <a href="supercar2.jpg" target="_blank"><img src="supercar2-thumb.jpg" alt="Supercar 2"></a>
+        <a href="supercar3.jpg" target="_blank"><img src="supercar3-thumb.jpg" alt="Supercar 3"></a>
+    </div>
+
+</body>
+
+</html>
