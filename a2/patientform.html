@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information Form</title>
+</head>
+<body>
+
+<form>
+  <table border="1" cellpadding="5" cellspacing="0" width="100%">
+    <tr>
+      <td colspan="4" bgcolor="#a9a9a9"><b>1. Patient Information</b></td>
+    </tr>
+    <tr>
+      <td>Title:</td>
+      <td colspan="3">
+        <input type="checkbox" name="title" value="Miss"> Miss 
+        <input type="checkbox" name="title" value="Mr"> Mr 
+        <input type="checkbox" name="title" value="Mrs"> Mrs 
+        <input type="checkbox" name="title" value="Ms"> Ms 
+        <input type="checkbox" name="title" value="Mstr"> Mstr 
+        <input type="checkbox" name="title" value="Mx"> Mx
+      </td>
+    </tr>
+    <tr>
+      <td>Family Name:</td>
+      <td><input type="text" name="family_name"></td>
+      <td>Gender Identity:</td>
+      <td>
+        <input type="checkbox" name="gender_identity" value="Female"> Female 
+        <input type="checkbox" name="gender_identity" value="Male"> Male 
+        <input type="checkbox" name="gender_identity" value="Trans"> Trans 
+        <input type="checkbox" name="gender_identity" value="Other"> Other
+      </td>
+    </tr>
+    <tr>
+      <td>Given Name(s):</td>
+      <td><input type="text" name="given_names"></td>
+      <td>Marital Status:</td>
+      <td>
+        <input type="checkbox" name="marital_status" value="Single"> Single 
+        <input type="checkbox" name="marital_status" value="Married"> Married 
+        <input type="checkbox" name="marital_status" value="Civil Partnership"> Civil Partnership 
+        <input type="checkbox" name="marital_status" value="Separated"> Separated 
+        <input type="checkbox" name="marital_status" value="Divorced"> Divorced 
+        <input type="checkbox" name="marital_status" value="Other"> Other
+      </td>
+    </tr>
+    <tr>
+      <td>Known As:</td>
+      <td><input type="text" name="known_as"></td>
+      <td>Ethnicity: Select A and B</td>
+      <td>
+        A: 
+        <input type="checkbox" name="ethnicity_a" value="White"> White 
+        <input type="checkbox" name="ethnicity_a" value="Black"> Black 
+        <input type="checkbox" name="ethnicity_a" value="Asian"> Asian 
+        <input type="checkbox" name="ethnicity_a" value="Mixed"> Mixed 
+        <input type="checkbox" name="ethnicity_a" value="Other"> Other<br>
+        B: 
+        <input type="checkbox" name="ethnicity_b" value="British"> British 
+        <input type="checkbox" name="ethnicity_b" value="European"> European 
+        <input type="checkbox" name="ethnicity_b" value="Other"> Other
+      </td>
+    </tr>
+    <tr>
+      <td>Previous Family Name:</td>
+      <td><input type="text" name="previous_family_name"></td>
+      <td>First Language:</td>
+      <td><input type="text" name="first_language"></td>
+    </tr>
+    <tr>
+      <td>Date of Birth:</td>
+      <td><input type="date" name="dob"></td>
+      <td>Resident Since:</td>
+      <td><input type="month" name="resident_since"></td>
+    </tr>
+    <tr>
+      <td>Jersey SSD No/Card:</td>
+      <td><input type="text" name="jersey_ssd"> <br>
+        Seen By:<input type="text" name="seen_by"></td>
+      <td>Reason for Registering with the Practice:</td>
+      <td>
+        <input type="checkbox" name="reason" value="Transferring"> Transferring from another Jersey GP Practice<br>
+        <input type="checkbox" name="reason" value="Re-Registering"> Re-Registering with GP Practice<br>
+        <input type="checkbox" name="reason" value="New Resident"> New Resident in Jersey
+      </td>
+    </tr>
+    <tr bgcolor="#a9a9a9">
+      <td>Jersey SSD HIF Status: (For Practice to complete)</td>
+      <td>
+        <input type="checkbox" name="hif_status" value="HIO"> HIO 
+        <input type="checkbox" name="hif_status" value="HMA"> HMA 
+        <input type="checkbox" name="hif_status" value="Private"> Private
+      </td>
+      <td>Identification Confirmed: (Passport / Driving Licence)</td>
+      <td>
+        <input type="checkbox" name="identification_confirmed" value="Yes"> Yes 
+        <input type="checkbox" name="identification_confirmed" value="No"> No<br>
+        ID Type: <input type="text" name="id_type"><br>
+        Seen By: <input type="text" name="seen_by">
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
