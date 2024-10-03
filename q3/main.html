@@ -19,8 +19,8 @@
         }
 
         .album-list {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 40px;
             margin-top: 40px;
         }
@@ -28,7 +28,7 @@
         .album {
             border: 2px solid #eaeaea;
             padding: 10px;
-            width: 200px;
+            width: 250px;
         }
 
         .album img {
@@ -58,24 +58,39 @@
 <body>
 
     <h1>Luxury Car Photo Album</h1>
-    <p>Explore two exciting categories of luxury cars.</p>
+    <p>Explore five exciting categories of luxury cars.</p>
 
-    <!-- Album List -->
     <div class="album-list">
         <div class="album">
             <a href="photoalbum1.html">
-                <img src="thumbnail-photoalbum1.jpg" alt="Supercars">
+                <img src="ferraricover.jpg" alt="Supercars">
                 <p>Supercars</p>
             </a>
         </div>
         <div class="album">
             <a href="photoalbum2.html">
-                <img src="thumbnail-photoalbum2.jpg" alt="SUVs">
+                <img src="rollscover.jpg" alt="SUVs">
                 <p>SUVs</p>
             </a>
         </div>
+        <div class="album">
+            <a href="#">
+                <img src="tesla.jpg" alt="Electric Luxury Cars">
+                <p>Electric Luxury Cars</p>
+            </a>
+        </div>
+        <div class="album">
+            <a href="#">
+                <img src="benz.jpg" alt="Luxury Sedans">
+                <p>Luxury Sedans</p>
+            </a>
+        </div>
+        <div class="album">
+            <a href="#">
+                <img src="convertible.jpg" alt="Luxury Convertibles">
+                <p>Luxury Convertibles</p>
+            </a>
+        </div>
     </div>
-
 </body>
-
 </html>
